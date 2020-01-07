@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('webfont.eot'); /* IE9 Compat Modes */
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
 body{
     padding:0px;
     width:95%;
@@ -6,19 +15,31 @@ body{
     background-image: url("https://freefrontend.com/assets/img/css-background-patterns/css-lattice-pattern.png");
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'MyWebFont', Fallback, sans-serif;
 }
-@font-face{
-
-}
-
 header{
     text-align: center;
 }
-section h2{
-    margin-left:40px;
+h2{
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    transition: .5s;
+    font-size: 2em;
+}
+h2:hover{
+    color:red;
 }
 section{
     overflow: hidden;
+}
+ul:hover li{
+    filter:blur(2px);
+    transform: scale(.7);
+} 
+ul li:hover{
+    filter: blur(0px);
+    transform: scale(1.2);
 }
 li{
     background-color: white;
@@ -29,6 +50,7 @@ li{
     text-align: center;
     margin:10px;
     padding:10px;
+    transition: .5s;
 }
 ul{
     text-align: center;

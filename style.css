@@ -1,0 +1,82 @@
+body{
+    padding:0px;
+    margin:0px;
+    color: white;
+    background-image: url("https://freefrontend.com/assets/img/css-background-patterns/css-lattice-pattern.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    text-align: center;
+}
+section h2{
+    margin-left:40px;
+}
+section{
+    width:95%;
+    margin: auto;
+    overflow: hidden;
+}
+li{
+    background-color: white;
+    border-radius: 5px;
+    width:250px;
+    height: 500px;
+    box-sizing: border-box;
+    text-align: center;
+}
+ul{
+    text-align: center;
+    color:black;
+}
+#grid-floats li{
+    box-sizing: border-box;
+    float: left;
+    list-style: none;
+    margin:10px;
+    padding:10px;
+}
+#grid-floats li:first-child{
+    width: 520px;
+}
+img{
+    width:100%;
+}
+#grid-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+#grid-flex li{
+    list-style: none;
+    margin:10px;
+    padding:10px;
+
+}
+/* -----      Media Queries to make it responsive              -----*/
+@media (max-width:600px){
+    #grid-floats{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+    }
+    #grid-floats li:first-child{
+        flex:1;
+    }
+    li{
+        width:240px;
+    }
+}
+@media (min-width:600px) and (max-width:1024px) {
+    
+    #grid-floats li:first-child {
+        width:240px;
+    }
+    #grid-floats li:second-child{
+        width:240px;
+    }
+    li{
+        width:200px;
+    }
+
+}

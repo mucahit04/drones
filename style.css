@@ -25,11 +25,10 @@ body{
 header{
     text-align: center;
     font-family: "Acme";
-    
 }
 h2{
     text-align: center;
-    padding: 10px;
+    padding-bottom: 0px;
     margin: 0px;
     transition: .5s;
     font-size: 2em;
@@ -57,7 +56,7 @@ li{
     background-color: white;
     border-radius: 5px;
     width:20%;
-    height: 520px;
+    height: 500px;
     box-sizing: border-box;
     text-align: center;
     margin:10px;
@@ -76,29 +75,28 @@ ul{
     box-sizing: border-box;
     float: left;
     list-style: none;
-    
 }
 #grid-floats li:first-child{
+    box-sizing: border-box;
     width: calc(40% + 20px);
     padding:30px;
     padding-top: 10px;
+    
 }
 img{
-    width:100%;
+    width:70%;
 }
 #grid-flex{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 #grid-flex li{
     list-style: none;
-    margin:10px;
-    padding:10px;
-
 }
 /* -----      Mobile Version            -----*/
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     body {
       width: 100%;
     }
@@ -109,10 +107,12 @@ img{
     }
     #grid-floats li {
       width: 40%;
+      height: 530px;
       margin: 10px;
     }
     #grid-floats li:first-child {
       width: calc(80% + 20px);
+      height: 450px;
     }
     #grid-flex {
       width: 100%;
@@ -121,21 +121,25 @@ img{
     }
     #grid-flex li {
       width: 40%;
+      height: 530px;
       margin: 10px;
     }
   }
 /* ------      Tablet Version ------*/
 
-@media only screen and (min-width:600px) and (max-width:1024px) {
-    
+@media (min-width:601px) and (max-width:1024px) {
+
     #grid-floats li:first-child {
-        width: calc(42% + 10px);      
+        width: calc(42% + 10px);  
+        height: 480px;    
     }
     #grid-floats li:nth-child(2){
         width: calc(42% + 10px);
+        height: 480px;
     }
     li{
         width:28%;
+        height: 520px;
     }
 
 }

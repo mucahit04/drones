@@ -100,19 +100,32 @@ img{
     body {
       width: 100%;
     }
+    section{
+        width:100%;
+        margin: 0px;
+        padding:0px;
+        text-align: center;
+    }
+    ul:hover li{
+        filter:blur(0px);
+        transform: scale(1);
+    } 
+    ul li:hover{
+        filter: blur(0px);
+        transform: scale(1.2);
+    }
     #grid-floats {
-      clear: both;
+      margin: auto;
       width: 100%;
       box-sizing: border-box;
     }
     #grid-floats li {
-      width: 45%;
-      height: 560px;
+      width: 43%;
+      height: 590px;
       margin: 10px;
-      padding-bottom: 5px;
     }
     #grid-floats li:first-child {
-      width: calc(90% + 20px);
+      width: calc(86% + 20px);
       height: 450px;
     }
     #grid-flex {
@@ -121,10 +134,9 @@ img{
       clear: both;
     }
     #grid-flex li {
-      width: 45%;
-      height: 560px;
+      width: 43%;
+      height: 600px;
       margin: 10px;
-      padding-bottom: 5px;
     }
   }
 /* ------      Tablet Version ------*/

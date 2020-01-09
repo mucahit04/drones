@@ -106,12 +106,13 @@ img{
       box-sizing: border-box;
     }
     #grid-floats li {
-      width: 40%;
-      height: 530px;
+      width: 45%;
+      height: 560px;
       margin: 10px;
+      padding-bottom: 5px;
     }
     #grid-floats li:first-child {
-      width: calc(80% + 20px);
+      width: calc(90% + 20px);
       height: 450px;
     }
     #grid-flex {
@@ -120,9 +121,10 @@ img{
       clear: both;
     }
     #grid-flex li {
-      width: 40%;
-      height: 530px;
+      width: 45%;
+      height: 560px;
       margin: 10px;
+      padding-bottom: 5px;
     }
   }
 /* ------      Tablet Version ------*/

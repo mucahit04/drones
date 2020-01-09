@@ -113,17 +113,17 @@ img{
     ul li:hover{
         filter: blur(0px);
         transform: scale(1.2);
-        z-index: 2;
+        z-index:2;
     }
     #grid-floats {
-      margin: auto;
       width: 100%;
       box-sizing: border-box;
     }
     #grid-floats li {
       width: 43%;
-      height: 590px;
+      height: 600px;
       margin: 5px;
+      margin-bottom: 10px;
     }
     #grid-floats li:first-child {
       width: calc(86% + 10px);
@@ -138,6 +138,7 @@ img{
       width: 43%;
       height: 600px;
       margin: 5px;
+      margin-bottom: 10px;
     }
   }
 /* ------      Tablet Version ------*/

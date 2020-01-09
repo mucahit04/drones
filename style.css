@@ -122,10 +122,10 @@ img{
     #grid-floats li {
       width: 43%;
       height: 590px;
-      margin: 10px;
+      margin: 5px;
     }
     #grid-floats li:first-child {
-      width: calc(86% + 20px);
+      width: calc(86% + 10px);
       height: 450px;
     }
     #grid-flex {
@@ -136,7 +136,7 @@ img{
     #grid-flex li {
       width: 43%;
       height: 600px;
-      margin: 10px;
+      margin: 5px;
     }
   }
 /* ------      Tablet Version ------*/
